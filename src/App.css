@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: "Open Sans", serif;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: grey;
+}
+
+.main {
+  height: 50%;
+  background: #2a6bb1;
+  width: 50%;
+}
+
+.info {
+  height: 70vh;
+  background-blend-mode: multiply;
+  background-color: black;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+
+
+input[type="text"] {
+  border: 0;
+  border-bottom: solid 2px  #113a65;
+  width: 50%;
+  padding-bottom: 4px;
+  color: #fff; /* Цвет ввода текста */
+  font-weight: lighter; /* ??? */
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+button {
+  border: 2px solid #103a65;
+  border-bottom: 4px solid #103a65;
+  padding: 1vh 10vh;
+  margin: 0 0vh;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #235d9c;
+  color: #fff;
+  outline: none!important;
+}
+
+button:hover {
+  border-bottom: 2px solid #103a65;
+  position: relative;
+  top: 2px;
+}
+
+button:active {
+  border-bottom: 1vh solid transparent;
+  border-color: transparent;
+  position: relative;
+  top: 1vh;
+}
+
+.info h2 {
+  font-size: 3vh;
+  color: #fff;
+}
+
+.info p {
+  color: #e4e4e4;
+  font-weight: bold;
+}
+
+.infoWeath {
+  width: 100%;
+  font-size: 20px;
+  color: #000000;
+}
+
+.error {
+  width: 100%;
+  color: red;
+  font-size: 2vh;
+  position: relative;
+}
