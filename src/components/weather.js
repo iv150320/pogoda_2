@@ -4,36 +4,33 @@ const Weather = (props) => (
 
 <div className="infoWeath">
 
-{ props.city && 
+{ props.city &&
 
 <div>
 
-<p>Местоположение: {props.city}, {props.country} </p>
+<p><strong>Местоположение:</strong> {props.city}, {props.country} </p>
 
-<p>Температура на данный момент:  {Math.round(props.temp)}°C</p>
+<p><strong>Температура на данный момент:</strong>  {Math.round(props.temp)}°C</p>
 
-<p>Мин./Макс. температура:  {Math.round(props.temp_min)}/{Math.round(props.temp_max)}°C</p>
+<p><strong>Мин./Макс. температура:</strong>  {Math.round(props.temp_min)}/{Math.round(props.temp_max)}°C</p>
 
-<p>Давление: {props.pressure} hPa</p>
+<p><strong>Давление:</strong> {props.pressure} hPa</p>
 
-<p>Восход солнца:  {props.sunrise}</p>
+<p><strong>Восход солнца:</strong>  {props.sunrise}</p>
 
-<p>Заход солнца:  {props.sunset}</p>
+<p><strong>Заход солнца:</strong>  {props.sunset}</p>
 
-<p>Влажность: {props.humidity}%</p>
+<p><strong>Влажность:</strong> {props.humidity}%</p>
 
-<p>Видимость: {props.visibility/1000} км</p>
+<p><strong>Видимость:</strong> {props.visibility/1000} км</p>
 
-<p>Ветер: {props.wind} км/ч</p>
+<p><strong>Ветер:</strong> {props.wind} км/ч</p>
 
-<p>Облачность: {props.clouds}%</p>
+<p><strong>Облачность:</strong> {props.clouds}%</p>
 
 </div>
 
 }
-
-
-<p className="error"> {props.error} </p>
 
 </div>
 

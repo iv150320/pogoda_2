@@ -10,59 +10,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 
-  background: grey;
+  background: #fff;
 }
 
 .main {
   height: 50%;
-  background: #2a6bb1;
+  background: #e9e9e9;
   width: 50%;
+  box-shadow: 0 0 7px grey; /* вставили изящную серую тень  */
 }
 
 .info {
-  height: 70vh;
   background-blend-mode: multiply;
-  background-color: black;
+  background-color: #FFD700;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #000;
+  box-shadow: 0 0 7px grey; /* вставили изящную серую тень  */
 }
-
 
 
 input[type="text"] {
   border: 0;
   border-bottom: solid 2px  #113a65;
-  width: 50%;
+  width: 25vh;
   padding-bottom: 4px;
-  color: #fff; /* Цвет ввода текста */
+  color: #545454; /* Цвет ввода текста */
   font-weight: lighter; /* ??? */
+  margin-top: 30px;
   margin-bottom: 30px;
-  margin-right: 20px;
   font-size: 20px;
   outline: none;
+  box-shadow: 0 0 7px grey; /* вставили изящную серую тень  */
 }
 
 button {
-  border: 2px solid #103a65;
-  border-bottom: 4px solid #103a65;
+  width: 25vh;
   padding: 1vh 10vh;
   margin: 0 0vh;
-  border-radius: 2px;
+  border-radius: 15px; /* загругление кнопок  */
   cursor: pointer;
-  background-color: #235d9c;
-  color: #fff;
-  outline: none!important;
+  background-color:#cccccc;
+  color:#545454;
+  font-weight: bold;
+  font-size: 100%;
+  border-color: 10px black;
+  box-shadow: 0 0 3px grey; /* вставили изящную серую тень  */
+
+  display: flex;          /* с помощью этих стрех строчек выровняли текст в кнопке   */     
+  align-items: center;
+  justify-content: center;
+
+  outline: 0 !important /* c помощью этой строки удалил выделение кнопки после нажатия стандартным черным цветом */
+
 }
 
 button:hover {
-  border-bottom: 2px solid #103a65;
   position: relative;
-  top: 2px;
+  top: 1px;
+
+  outline: 0 !important
+  
 }
 
 button:active {
@@ -70,27 +82,30 @@ button:active {
   border-color: transparent;
   position: relative;
   top: 1vh;
+
+  outline: 0 !important
 }
 
 .info h2 {
   font-size: 3vh;
-  color: #fff;
+  color: #545454;
 }
 
 .info p {
-  color: #e4e4e4;
+  color: #6a6a6a;
   font-weight: bold;
 }
 
 .infoWeath {
+  margin-top: 5px;
   width: 100%;
-  font-size: 20px;
-  color: #000000;
+  font-size: 16px;
+  color: #777;
 }
 
 .error {
   width: 100%;
-  color: red;
+  color: #545454;
   font-size: 2vh;
   position: relative;
 }

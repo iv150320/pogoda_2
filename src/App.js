@@ -36,7 +36,7 @@ class App extends React.Component {
     if(city) {
 
       const api_url = await
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`);
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`); // !!! Чтобы загружалось на сервере по https -- ставим тут вместо http == httpS
       const data = await api_url.json();
 
       //конвертировал секунды из Апи в нормальный формат времени
@@ -96,7 +96,7 @@ class App extends React.Component {
     
 }
 
-clickreset1 = () => {
+clickreset1 = () => { //вот этот обработчик отвечает за сброс данных из состояния
  
    console.log('сброс - проверка');
  
@@ -148,7 +148,13 @@ return (
 
 <div className="col-sm-7 form">
 
-<Form weatherMethod={this.gettingWeather} />
+<Form 
+
+weatherMethod={this.gettingWeather}
+
+error={this.state.error} //отправил в компонент ФОРМ, как пропс от еррор !!! иначе не передается и не отражается !!!
+
+/>
 
 <Weather
 
@@ -169,11 +175,15 @@ error={this.state.error}
 
 />
 
-</div>
-
 <Reset1 reset111={this.clickreset1} />
 
 </div>
+
+
+
+</div>
+
+
 
 </div>
 

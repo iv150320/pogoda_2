@@ -1,9 +1,9 @@
-import React from "react";
+import React from "react"; //этот компонент отвечает за кнопку сброс
 
 const Reset1 = (props) => (
 
 
-    <button onClick={props.reset111}>Получить погоду</button>     
+    <button onClick={props.reset111}>Сбросить прогноз</button>     
 
 );
 
