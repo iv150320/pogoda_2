@@ -19,11 +19,11 @@ A React-based weather application that fetches and displays meteorological data.
 
 ```mermaid
 graph TD
-    User[👤 User] --> App[⚛️ React Application]
-    App --> UI[🎨 Bootstrap UI Components]
-    App --> API[☁️ Weather API]
+    User["👤 User"] --> App["⚛️ React Application"]
+    App --> UI["🎨 Bootstrap UI Components"]
+    App --> API["☁️ Weather API"]
     API -->|JSON Data| App
-    App --> State[📦 State Updates]
+    App --> State["📦 State Updates"]
     State --> UI
 
     classDef main fill:#f9f,stroke:#333,stroke-width:2px;
